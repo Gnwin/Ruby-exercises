@@ -94,4 +94,23 @@
 
 			# my own solution
 
+			fac_nums = [5, 6, 7, 8]
+
+			def factorial(val) 
+				num = val - 1
+				# fig = val-1
+				while num > 0
+					val = val*num
+					num-=1
+				end
+				puts val
+			end
+
+			fac_nums.each do |int|
+				factorial(int) 
+			end
 			
+
+
+
+
