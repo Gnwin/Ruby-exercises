@@ -110,6 +110,7 @@
 				factorial(int) 
 			end
 
+
 		puts "exercise6----------------------------"
 		## - Write a program that calculates the squares of 3 float numbers of your choosing and outputs the result to the screen.
 
@@ -125,7 +126,16 @@
 			float_nums.each do |int|
 				puts int ** 2 
 			end
+
+
+		puts "exercise7----------------------------"
+		## - What does the following error message tell you?
+
+			" SyntaxError: (irb):2: syntax error, unexpected ')', expecting '}'
+			from /usr/local/rvm/rubies/ruby-2.5.3/bin/irb:16:in `<main>' "
 			
+			"""There is an opening bracket somewhere in the program without a closing bracket following it. It may have happened when creating a hash.""
+				
 
 
 
