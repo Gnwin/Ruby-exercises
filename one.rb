@@ -98,7 +98,7 @@
 
 			def factorial(val) 
 				num = val - 1
-				# fig = val-1
+
 				while num > 0
 					val = val*num
 					num-=1
@@ -108,6 +108,22 @@
 
 			fac_nums.each do |int|
 				factorial(int) 
+			end
+
+		puts "exercise6----------------------------"
+		## - Write a program that calculates the squares of 3 float numbers of your choosing and outputs the result to the screen.
+
+			puts 4.30 * 4.30
+			puts 6.13 * 6.13
+			puts 124.34 * 124.34
+
+			# my own solution
+
+			float_nums = [3.22, 4.56, 7.88]
+			# float_nums = [4.30, 6.13, 124.34]
+
+			float_nums.each do |int|
+				puts int ** 2 
 			end
 			
 
