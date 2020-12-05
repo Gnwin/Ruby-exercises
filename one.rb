@@ -40,55 +40,25 @@
 
 		
 		puts "exercise5----------------------------"
-		## - Write a program that outputs the factorial of the numbers 5, 6, 7, and 8.
+		## - Look at the following programs...
 
-			puts 5 * 4 * 3 * 2 * 1
-			puts 6 * 5 * 4 * 3 * 2 * 1
-			puts 7 * 6 * 5 * 4 * 3 * 2 * 1
-			puts 8 * 7 * 6 * 5 * 4 * 3 * 2 * 1
+			# x = 0
+			# 3.times do
+				# x += 1
+			# end
+			# puts x
 
-			# my own solution
+			#and
 
-			fac_nums = [5, 6, 7, 8]
+			#y = 0
+			#3.times do
+  			#y += 1
+  			#x = y
+			#end
+			#puts x
 
-			def factorial(val) 
-				num = val - 1
+			#What does x print to the screen in each case? Do they both give errors? Are the errors different? Why?
 
-				while num > 0
-					val = val*num
-					num-=1
-				end
-				puts val
-			end
-
-			fac_nums.each do |int|
-				factorial(int) 
-			end
-
-
-		puts "exercise6----------------------------"
-		## - Write a program that calculates the squares of 3 float numbers of your choosing and outputs the result to the screen.
-
-			puts 4.30 * 4.30
-			puts 6.13 * 6.13
-			puts 124.34 * 124.34
-
-			# my own solution
-
-			float_nums = [3.22, 4.56, 7.88]
-			# float_nums = [4.30, 6.13, 124.34]
-
-			float_nums.each do |int|
-				puts int ** 2 
-			end
-
-
-		puts "exercise7----------------------------"
-		## - What does the following error message tell you?
-
-			" SyntaxError: (irb):2: syntax error, unexpected ')', expecting '}'
-			from /usr/local/rvm/rubies/ruby-2.5.3/bin/irb:16:in `<main>' "
-			
-			"""There is an opening bracket somewhere in the program without a closing bracket following it. It may have happened when creating a hash."""
-		
-
+			# x prints 3 in the first case and x prints error in the second case
+			#in `<main>': undefined local variable or method `x' for main:Object
+			#(NameError)
