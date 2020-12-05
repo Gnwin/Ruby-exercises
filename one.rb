@@ -1,14 +1,13 @@
 ### Exercises
 
 		puts "exercise_1----------------------------"
-		## - Add two strings together that, when concatenated, return your first and last name as your full name in one string.
+		## - Write a program called name.rb that asks the user to type in their name and then prints out a greeting message with their name included.
 
-			# e.g. "<Firstname> <Lastname>"
+			# please type in your name...
+			name  = gets.chomp
 
-			# For example, if your name is John Doe, think about how you can put "John" and "Doe" together to get "John Doe".
+			puts "Hi " + name + ", how are you?"
 
-			fullName = "Godwin " + "Nwachukwu";
-			puts fullName
 
 
 		puts "exercise2----------------------------"
