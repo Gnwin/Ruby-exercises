@@ -32,7 +32,11 @@
 		puts "exercise4----------------------------"
 		## - Modify name.rb again so that it first asks the user for their first name, saves it into a variable, and then does the same for the last name. Then outputs their full name all at once.
 
-			
+			puts "Whats your first name?"
+			name = gets.chomp
+			puts "Whats your last name?"
+			last_name = gets.chomp
+			puts "#{name} #{last_name}"
 
 		
 		puts "exercise5----------------------------"
