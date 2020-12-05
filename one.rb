@@ -5,31 +5,18 @@
 
 			# please type in your name...
 			name  = gets.chomp
-
 			puts "Hi " + name + ", how are you?"
 
 
 
 		puts "exercise2----------------------------"
-		## - Use the modulo operator, division, or a combination of both to take a 4 digit number and find the digit in the: 1) thousands place 2) hundreds place 3) tens place 4) ones place
+		## - Write a program called age.rb that asks a user how old they are and then tells them how old they will be in 10, 20, 30 and 40 years. Below is the output for someone 20 years old.
+			
+			num_years = [10, 20, 30, 40]
+			age = gets.chomp.to_i
 
-			thousands = 4936 / 1000
-			hundreds = 4936 % 1000 / 100
-			tens = 4936 % 1000 % 100 / 10
-			ones = 4936 % 1000 % 100 % 10
-			puts thousands
-			puts hundreds
-			puts tens
-			puts ones
-
-			# my own solution
-			num = 4836
-			arrnums = [1000, 100, 10, 1]
-
-			for i in arrnums do
-				digit_rem = num.divmod(i)
-				puts digit_rem[0]
-				num = digit_rem[1]
+			num_years.each do |years|
+				puts "you will be #{age + years} in #{years} years time"
 			end
 
 
