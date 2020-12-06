@@ -1,13 +1,15 @@
 ### Exercises
 
 		puts "exercise_1----------------------------"
-		## - Write a program called name.rb that asks the user to type in their name and then prints out a greeting message with their name included.
+		## - Write a program that prints a greeting message. This program should contain a method called greeting that takes a name as its parameter and returns a string.
 
-			# please type in your name...
-			name  = gets.chomp
-			puts "Hi " + name + ", how are you?"
+			def greeting(name)
+				str = "Hi #{name}, how are you?"
+			end
 
+			my_name = "Godwin Nwachukwu"
 
+			greeting(my_name)
 
 		puts "exercise2----------------------------"
 		## - Write a program called age.rb that asks a user how old they are and then tells them how old they will be in 10, 20, 30 and 40 years. Below is the output for someone 20 years old.
