@@ -1,7 +1,8 @@
 ### Exercises
 
+
 		puts "exercise_1----------------------------"
-		## - Write a program that prints a greeting message. This program should contain a method called greeting that takes a name as its parameter and returns a string.
+		## - Write a program that prints a greeting message. This program should contain a method called greeting that takes a name as its parameter and returns a string.i
 
 			def greeting(name)
 				str = "Hi #{name}, how are you?"
@@ -12,14 +13,17 @@
 			greeting(my_name)
 
 		puts "exercise2----------------------------"
-		## - Write a program called age.rb that asks a user how old they are and then tells them how old they will be in 10, 20, 30 and 40 years. Below is the output for someone 20 years old.
+		## - What do the following expressions evaluate to? (what do they return?)(n a method or code block)
 			
-			num_years = [10, 20, 30, 40]
-			age = gets.chomp.to_i
+			# 1. x = 2 # => 2 
 
-			num_years.each do |years|
-				puts "you will be #{age + years} in #{years} years time"
-			end
+			# 2. puts x = 2 # => nil //logs 2 and returns nil. like saying log out an expression. but wont work 
+			
+			# 3. p name = "Joe" # => "Joe" // logs "Joe" and returns "Joe"
+			
+			# 4. four = "four" # => "four" //variable declaration logs "nothing" and returns nothing
+			
+			# 5. print something = "nothing" # => nil ///logs nothing and returns nil
 
 
 		puts "exercise3----------------------------"
