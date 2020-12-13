@@ -12,6 +12,7 @@
 
 			greeting(my_name)
 
+
 		puts "exercise2----------------------------"
 		## - What do the following expressions evaluate to? (what do they return?)(n a method or code block)
 			
@@ -27,44 +28,43 @@
 
 
 		puts "exercise3----------------------------"
-		## - Add another section onto name.rb that prints the name of the user 10 times. You must do this without explicitly writing the puts method 10 times in a row. Hint: you can use the times method to do something repeatedly.
+		## - Write a program that includes a method called multiply that takes two arguments and returns the product of the two numbers.
 
-		user = "Godwin"
-		10.times do
-			print user
-		end
-		
+			def multiply(x, y)
+				x * y
+			end
+
+			puts multiply(5, 6)
+
 
 		puts "exercise4----------------------------"
-		## - Modify name.rb again so that it first asks the user for their first name, saves it into a variable, and then does the same for the last name. Then outputs their full name all at once.
+		## - What will the following code print to the screen?
 
-			puts "Whats your first name?"
-			name = gets.chomp
-			puts "Whats your last name?"
-			last_name = gets.chomp
-			puts "#{name} #{last_name}"
+			def scream(words)
+				words = words + "!!!!"
+				return
+				puts words
+			end
 
+			scream("Yippeee")
+			#it will return nothing. 
 		
 		puts "exercise5----------------------------"
-		## - Look at the following programs...
+		## - 1) Edit the method definition in exercise #4 so that it does print words on the screen. 2) What does it return now?
 
-			# x = 0
-			# 3.times do
-				# x += 1
-			# end
-			# puts x
+			def scream(words)
+				words = words + "!!!!"
+				puts words
+			end
 
-			#and
+			#it will log out Yippeee!!!!! and return nothing.
+		
+		puts "exercise6----------------------------"
+		## - What does the following error message tell you?
 
-			#y = 0
-			#3.times do
-  			#y += 1
-  			#x = y
-			#end
-			#puts x
+		# ArgumentError: wrong number of arguments (1 for 2)
+		# from (irb):1:in `calculate_product'
+		# from (irb):4
+		# from /Users/username/.rvm/rubies/ruby-2.5.3/bin/irb:12:in `<main>'
 
-			#What does x print to the screen in each case? Do they both give errors? Are the errors different? Why?
-
-			# x prints 3 in the first case and x prints error in the second case
-			#in `<main>': undefined local variable or method `x' for main:Object
-			#(NameError)
+		#it means that you are invoking a method calculate_product which has two arguments but you passed in one argument.
